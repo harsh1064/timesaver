@@ -1,0 +1,16 @@
+<input type="text" name="price" onchange="updateInput()">
+
+<input type="text" name="discount" onchange="updateInput()">
+
+
+
+
+<input type="text" name="total_price" value="">
+
+<script>
+function updateInput(){
+    var price = document.getElementsByName("price")[0].value;
+    var discount = document.getElementsByName("discount")[0].value;
+    document.getElementsByName("price")[0].value = +discount + +price;
+}
+</script>
